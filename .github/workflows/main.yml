@@ -1,0 +1,12 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to Cloudflare Workers with Wrangler
+      uses: cloudflare/wrangler-action@0.1.1
